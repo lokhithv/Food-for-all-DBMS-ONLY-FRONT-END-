@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor</title>
+    <style>
+        body {
+
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #008000 ;
+        }
+    </style>
+</head>
+<body style ="background-color: ADD8E6">
+    <div class="container">
+        <h1>Donor</h1>
+        <form action="/submit" method="post">
+            <label for="donor-name">Donor Name:</label>
+            <input type="text" id="donor-name" name="donor-name" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="pickup-address">PickUp Address:</label>
+            <input type="text" id="pickup-address" name="pickup-address" required>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" name="phone-number" required>
+
+            <label for="food-details">Food Details:</label>
+            <textarea id="food-details" name="food-details" rows="4" required></textarea>
+
+            <label for="quantity-available">Quantity Available:</label>
+            <input type="number" id="quantity-available" name="quantity-available" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
